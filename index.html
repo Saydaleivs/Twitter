@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="container-x">
+        <div class="sidemenu">
+            
+            <a href="#">
+                <div class="sidemenu-logo">
+                    <img src="./Images/Logo.svg" alt="">
+                </div>
+            </a>
+
+
+            <a href="#">
+                <div class="sidemenu-flexer">
+                    <img src="./Images/SelectedHome.svg" alt="">
+                    <h2 style="font-weight: 800;">Home</h2>
+                </div>
+            </a>
+
+            <div class="sidemenu-flexer">
+                <img src="./Images/explore.svg" alt="">
+                <h2>Explore</h2>
+            </div>
+            
+            <div class="sidemenu-flexer">
+                <img src="./Images/notifaction.svg" alt="">
+                <h2>Notifications</h2>
+            </div>
+
+            <div class="sidemenu-flexer">
+                <img src="./Images/Message.svg" alt="">
+                <h2>Messages</h2>
+            </div>
+
+            <div id="bookmarks" class="sidemenu-flexer">
+                <img id="bookmarks-img" src="./Images/bookmarks.svg" alt="">
+                <h2>Bookmarks</h2>
+            </div>
+
+            <div id="bookmarks" class="sidemenu-flexer">
+                <img src="./Images/lists.svg" alt="">
+                <h2>Lists</h2>
+            </div>
+
+            <a href="Profile.html">
+                <div class="sidemenu-flexer">
+                    <img src="./Images/profile.svg" alt="">
+                    <h2 style="color: #1DA1F2;">Profile</h2>
+                </div>
+            </a>
+
+            <div class="sidemenu-flexer">
+                <img src="./Images/more.svg" alt="">
+                <h2>More</h2>
+            </div>
+
+            <div id="bookmarks" class="tweet-button">
+                <button class="blue-btn">Tweet</button>
+            </div>
+
+            <div>
+                <img id="tweet-compose" src="./Images/tweet.png" alt="">
+            </div>
+
+
+
+
+            <div class="user-items">
+                <div>
+                    <img class="user-logo" src="./Images/my img.JPG" alt="">
+                </div>
+
+                <div id="bookmarks" class="name-nickname" style="justify-content: left;">
+                    <h3>Saeed Saydaliev</h3>
+                    <h3 id="username">@SaeedSaydaleiv</h3>
+                </div>
+
+                <div id="bookmarks">
+                    <img id="dots" src="./Images/threedots.svg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- main -->
+
+        <div class="main">
+            <div class="navbar">
+                <div class="navbar-flexer">     
+                    <h3>Home</h3>
+                    <div class="small-icons">
+                        <img style="padding: 12px;" src="./Images/stars.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <img src="./Images/my img.JPG"  id="whatshappening-img" alt="" class="user-logo">
+                    <input type="text" id="whatshappening" placeholder="What's happening ?">
+                </div>
+                
+
+               <div class="icon-tweetbtn" style="display: flex; justify-content:space-between; align-items: center;">
+                <div class="small-icons">
+                    <img src="./Images/Media.svg" alt="">
+                    <img src="./Images/Gif.svg" alt="">
+                    <img src="./Images/poll.svg" alt="">
+                    <img src="./Images/Emoji.svg" alt="">
+                    <img src="./Images/schedule.svg" alt="">
+                </div>
+
+                <div>
+                    <button id="small-tweet">
+                     Tweet
+                    </button>
+                </div>
+
+               </div> 
+            </div>
+
+
+            <div class="post">
+                <div class="post-details">
+                    <div>
+                        <a href="https://twitter.com/SpaceX">
+                            <img class="post-avatar" src="https://pbs.twimg.com/profile_images/1082744382585856001/rH_k3PtQ_400x400.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="poster-name-info">
+                        <div class="flex">
+                            <h2>SpaceX</h2>
+                            <h3>@SpaceX</h3>
+                            <img src="./Images/·.svg" alt="">
+                            <h3>2days ago</h3>
+                        </div>
+                        <div>
+                            <p class="post-description">One step closer to the first orbital flight test of Starship <a href="https://faa.gov/space/stakeholder_engagement/spacex_starship">https://faa.gov/space/stakehol...
+                            </a></p>
+                        </div>
+
+                    </div>
+                </div>
+
+    
+                <img class="post-content" src="./Images/spacex-post.jpg" alt="">
+
+
+                <div class="twitter-like-shares">
+
+                     <div onmouseover="hoverComment()" onmouseleave="unhoverComment()" class="media-activities comment-activity">
+                        <!-- <img src="./Images/comment.svg" onclick="blue()" class="comment-card" alt=""> -->
+                        <div class="card comment-card"></div>
+                        <p id="comment-number">351</p>
+                     </div>
+
+                     <div onmouseover="hoverRetweet()" onmouseleave="unhoverRetweet()" class="media-activities retweet-activity">
+                        <!-- <img src="./Images/retweet.svg" alt=""> -->
+                        <div class="card retweet-card"></div>
+                        <p id="retweet-number">185</p>
+                     </div>
+                     <div onmouseover="hoverLikes()" onmouseleave="unhoverLikes()" class="media-activities like-activity">
+                        <!-- <img src="./Images/Likes.svg" alt=""> -->
+                        <div class="card likes-card"></div>
+                        <p id="likes-number">199</p>
+                     </div>
+                     <div onmouseover="hoverShare()" onmouseleave="unhoverShare()" class="media-activities share-activity">
+                        <!-- <img src="./Images/share.svg" alt=""> -->
+                        <div class="card share-card"></div>
+                        <p id="share-number"></p>
+                     </div>
+
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-details">
+                    <div>
+                        <a href="https://twitter.com/elonmusk">
+                            <img class="post-avatar" src="./Images/elonmuskavatar.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="poster-name-info">
+                        <div class="flex">
+                            <h2>Elon Musk</h2>
+                            <h3>@elonmusk</h3>
+                            <img src="./Images/·.svg" alt="">
+                            <h3>Jul 5</h3>
+                        </div>
+                        <div>
+                            <p class="post-description">Happy July 4th!</p>
+                        </div>
+
+                    </div>
+                </div>
+
+    
+                <img class="post-content" id="elonmuskpost" src="./Images/elonpost.jpg" alt="">
+
+
+                <div class="twitter-like-shares">
+
+                     <div onmouseover="hoverComment2()" onmouseleave="unhoverComment2()" class="media-activities comment-activity">
+                        <!-- <img src="./Images/comment.svg" onclick="blue()" class="comment-card" alt=""> -->
+                        <div class="card comment-card"></div>
+                        <p id="comment-number comment-number2">351</p>
+                     </div>
+
+                     <div onmouseover="hoverRetweet2()" onmouseleave="unhoverRetweet2()" class="media-activities retweet-activity">
+                        <!-- <img src="./Images/retweet.svg" alt=""> -->
+                        <div class="card retweet-card "></div>
+                        <p id="retweet-number retweet-number2">185</p>
+                     </div>
+                     <div onmouseover="hoverLikes2()" onmouseleave="unhoverLikes2()" class="media-activities like-activity">
+                        <!-- <img src="./Images/Likes.svg" alt=""> -->
+                        <div class="card likes-card"></div>
+                        <p id="likes-number likes-number2">199</p>
+                     </div>
+                     <div onmouseover="hoverShare2()" onmouseleave="unhoverShare2()" class="media-activities share-activity">
+                        <!-- <img src="./Images/share.svg" alt=""> -->
+                        <div class="card share-card"></div>
+                        <p id="share-number share-number2"></p>
+                     </div>
+
+                </div>
+            </div>
+
+
+
+            <!-- <img style="margin-top: 10px; border-bottom: 1px solid rgb(62, 62, 62);" src="Container.svg" alt=""> -->
+        </div>
+
+       <main>
+        <!-- <img src="Side Column.svg" alt=""> -->
+        <div class="searching">
+            <input type="text" id="search" placeholder="Search Twitter">
+            <img id="search-icon" src="./Images/search.svg" alt="">     
+        </div>
+        
+        <!-- <img style="margin-top: 15px" src="News.svg" alt=""> -->
+
+        <div class="news">
+            <h1>What's Happening</h1>
+
+            <div class="news-box">
+                <div style="width: 233px">
+                    <div class="detailed-info">
+                        <h5>COVID 19</h5>
+                        <img src="./Images/·.svg" alt="">
+                        <h5>Last night</h5>
+                    </div>
+    
+                    <div>
+                        <h2>England’s Chief Medical Officer says the UK is at the most dangerous time of the pandemic
+                        </h2>
+                        <h5>Trending with <span class="blue-text">#covid</span></h5>
+                    </div>
+                </div>
+
+                <div class="news-pic">
+                    <img src="./Images/Thumbnail.svg" alt="">
+                </div>
+            </div>
+
+
+            <div class="news-box">
+                <div style="width: 233px">
+                    <div class="detailed-info">
+                        <h5>US News</h5>
+                        <img src="./Images/·.svg" alt="">
+                        <h5>4h ago</h5>
+                    </div>
+    
+                    <div>
+                        <h2>Parler may go offline following suspensions by Amazon, Apple and Google
+                        </h2>
+                        <h5>Trending with <span class="blue-text">#trum</span></h5>
+                    </div>
+                </div>
+
+                <div class="news-pic">
+                    <img src="./Images/Thumbnail2.svg" alt="">
+                </div>
+            </div>
+
+
+            <div class="news-box">
+                <div style="width: 233px">
+                    <div class="detailed-info">
+                        <h5>India</h5>
+                        <img src="./Images/·.svg" alt="">
+                        <h5>1h ago</h5>
+                    </div>
+    
+                    <div>
+                        <h2>India vs Australia: India hold on to earn a draw on Day 5 in Sydney Test
+                        </h2>
+                        <h5>Trending with <span class="blue-text">#sport</span></h5>
+                    </div>
+                </div>
+
+                <div class="news-pic">
+                    <img src="./Images/Thumbnail3.svg" alt="">
+                </div>
+            </div>
+
+            <h5 class="show-more">Show more</h5>
+        </div>
+
+
+
+        <div class="follow-recommendation">
+            <h1>Who to follow</h1>
+
+            <div class="accounts-to-follow">
+                <div class="flexer-div">                   
+                    <div>
+                        <img class="user-avatar" src="./Images/userpic.svg" alt="">
+                    </div>
+
+                    <div>
+                        <h3 class="name-of-celebrity">Bessie Cooper</h3>
+                        <h3 class="twitter-nickname">@alessandroveronezi</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <button onclick="follow()" ondblclick="unfollow()" class="follow-button">Follow</button>
+                </div>
+            </div>
+
+            <div class="accounts-to-follow">
+                <div class="flexer-div">                   
+                    <div>
+                        <img class="user-avatar" src="./Images/userpic2.svg" alt="">
+                    </div>
+
+                    <div>
+                        <h3 class="name-of-celebrity">Jenny Wilson</h3>
+                        <h3 class="twitter-nickname">@gabrielcantarin</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <button onclick="follow2()" ondblclick="unfollow2()" class="follow-button follow-button2">Follow</button>
+                </div>
+            </div>
+
+            <h5 class="show-more" id="show-more2">Show more</h5>
+
+        </div>
+
+
+        <footer>
+            <h5>Terms of Service
+                Privacy Policy
+                Cookie Policy
+                Accessibility
+                Ads info
+                More
+                © 2022 Twitter, Inc.</h5>
+        </footer>
+
+
+       </main>
+
+
+    </div>
+
+
+</body>
+</html>
